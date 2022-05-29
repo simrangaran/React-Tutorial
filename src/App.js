@@ -1,26 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Textform from './Components/Textform';
 
 function App() {
   return (
     <>
-    <h1>Simran</h1>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Coding in React
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Simran and Ayush
-        </a>
-      </header>
-    </div>
+      <Navbar title="TextBAR" about="About-Us" contact="Contact-Us"/>
+      <div className="container">
+      <Textform heading="Text-O-Bar"/>
+      </div>
     </>
   );
 }
